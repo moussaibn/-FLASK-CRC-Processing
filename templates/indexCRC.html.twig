@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block contenu %}
+	<form class="login" action="{{ url_for('CRC_calcul')}}" method=POST>
+		<p class="title">Calcul du CRC</p>
+		<input type="text" placeholder="Saisir le message" autofocus name="message"/>
+		<i class="fa fa-text"></i>
+		<a href="#">Principe du CRC</a>
+		<button>
+			<i class="spinner"></i>
+			<span class="state">Calculer</span>
+		</button>
+	</form>
+{% endblock %}
